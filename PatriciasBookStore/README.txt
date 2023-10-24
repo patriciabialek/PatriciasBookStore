@@ -40,3 +40,6 @@ Run the project - no issues.
 Replaced the prevoius site.css with the new one provided.
 In _Layout.cshtml I addded additional scripts and stylesheets that were provided.
 Run the project - no issues.
+
+2023-10-24 1146:
+Working on the dropdown in the nav bar but having issues will fix later.
