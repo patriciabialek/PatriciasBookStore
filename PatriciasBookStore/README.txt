@@ -14,7 +14,7 @@ In Properties > launchSetting.json - comment out sslport, will have to uncomment
 Commented out Startup.cs file - line 35.
 
 2023-10-24 1009:
-REVIEW:
+REVIEW (pt.1.1):
 Reviewed and commented the IAction in the HomeController.cs page. 
 Can put JS scripts below the footer in Views > Shared > Layout.cshtml.
 In the same Shared folder - _LoginPartial.cshtml is used for buttons to login and register.
@@ -23,3 +23,15 @@ the model states on the client side.
 In the same Shared folder - Error.cshtml creates a generic error view (404).
 In the same Shared folder - _ViewImports.cshtml is for tag helpers and where custom tag helpers can be created.
 In the same Shared folder - _ViewStart.cshtml will be the master page for all the views within the project folder. 
+
+2023-10-24 1026:
+About to use bootstrap (pt.1.3).
+Run the project - no issues.
+
+2023-10-24 1049:
+Downloaded 'Minty' theme (bootstrap.css) on bootswatch.com.
+Replaced previous bootstrap with new Minty bootstrap in:
+wwwroot > lib > bootstrap > dist > css
+Made changes in Views > Shared > _Layout.cshtml file.
+Made changes in _LoginPartial.cshtml file.
+Run the project - no issues.
