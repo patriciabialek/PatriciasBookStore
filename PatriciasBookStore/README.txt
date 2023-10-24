@@ -35,3 +35,8 @@ wwwroot > lib > bootstrap > dist > css
 Made changes in Views > Shared > _Layout.cshtml file.
 Made changes in _LoginPartial.cshtml file.
 Run the project - no issues.
+
+2023-10-24 1120:
+Replaced the prevoius site.css with the new one provided.
+In _Layout.cshtml I addded additional scripts and stylesheets that were provided.
+Run the project - no issues.
