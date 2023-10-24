@@ -18,6 +18,9 @@ namespace PatriciasBookStore.Controllers
             _logger = logger;
         }
 
+        /*IAction interface result defines what will be the result of the action.
+         When you type in the URL it hits the action method withiin the controller and process the action
+        returning the 'View'. **Every controller has an action, if not defined it will be Get action method*/
         public IActionResult Index()
         {
             return View();
