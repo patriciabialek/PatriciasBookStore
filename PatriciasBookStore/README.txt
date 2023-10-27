@@ -84,3 +84,10 @@ Run the project - no issues.
 2023-10-27 1410:
 In ErrorViewModel.cs I chnaged the namespace to (namespace PatriciasBookStore.Models.ViewModels).
 Changed the namespace in Error.cshtml file to (PatriciasBookStore.Models.ViewModels.ErrorViewModel).
+Had an error I had to chnage the namespace in HomeController.cs to (PatriciasBookStore.Models.ViewModels.ErrorViewModel) on line 37.
+
+2023-10-27 1420:
+Added a new class called SD.cs to Utility folder.
+Change the class to (public static class SD).
+In PatriciasBookStore > project References add Utility.
+In PatriciasBooks.DataAccess > project References add Models and Utility
