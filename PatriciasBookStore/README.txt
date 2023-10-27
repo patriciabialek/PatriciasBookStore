@@ -56,3 +56,6 @@ Onto part 1.4
 Added 3 new projects to the application (PatriciasBooks.DataAccess, .Models, .Utility)
 Copy and Pasted the Data folder to the PatriciasBooks.DataAccess.
 Deleted previous Data folder.
+
+2023-10-27 1333:
+Installed Microsoft.EntityFrameworkCore.Relational(v.5.0.17) & Microsoft.EntityFrameworkCore.SqlServer(v.5.0.17).
