@@ -43,14 +43,10 @@ Run the project - no issues.
 
 2023-10-24 1146:
 Working on the dropdown in the nav bar but having issues will fix later.
-try:
-<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-          </div>
-</li>
+
+2023-10-27 1316:
+Fixed navbar for the drop down to properly work added this to the class: class="nav-link dropdown-toggle":
+id="navbarDropdown" 
+data-toggle="dropdown" 
+type="button"
+Run the project - no issues.
