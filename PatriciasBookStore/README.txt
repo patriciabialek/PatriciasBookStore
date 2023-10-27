@@ -75,3 +75,12 @@ Moved Models folder to PatriciasBooks.Models and deleted origional.
 In PatriciasBookStore right click to Add > Project reference and clicked on .DataAccess and .Models.
 Renamed Models folder to ViewModels.
 Changed the ErrorViewModels.cs namespace .Models.ViewModels
+
+2023-10-27 1402:
+Was having an error but I chnaged the startup.cs using statement to (using PatriciasBookStore.DataAccess.Data;) adding the 
+DataAccess to it.
+Run the project - no issues.
+
+2023-10-27 1410:
+In ErrorViewModel.cs I chnaged the namespace to (namespace PatriciasBookStore.Models.ViewModels).
+Changed the namespace in Error.cshtml file to (PatriciasBookStore.Models.ViewModels.ErrorViewModel).
