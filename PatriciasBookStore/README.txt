@@ -59,3 +59,6 @@ Deleted previous Data folder.
 
 2023-10-27 1333:
 Installed Microsoft.EntityFrameworkCore.Relational(v.5.0.17) & Microsoft.EntityFrameworkCore.SqlServer(v.5.0.17).
+
+2023-10-27 1336:
+Deleted Migrations folder.
