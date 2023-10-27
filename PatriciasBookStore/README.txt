@@ -91,3 +91,18 @@ Added a new class called SD.cs to Utility folder.
 Change the class to (public static class SD).
 In PatriciasBookStore > project References add Utility.
 In PatriciasBooks.DataAccess > project References add Models and Utility
+
+2023-10-27 1440:
+Added a new area called "Customers".
+In Startup.cs added {area:Customer}/ in pattern.
+Moved the HomeController.cs to the Area > Customer > Controller folder and delete Data and Models in the same directory.
+In HomeController.cs add [Area("Customer")] under the namespace.
+In the same file chnage the namespace to (namespace PatriciasBookStore.Area.Customer.Controllers).
+Had an error will fix later.
+
+2023-10-27 1443:
+Copy _ViewImport and _ViewStart to Customer View > Home Area.
+Modified the _ViewStart.cshtml to (Layout = "~/Views/Shared/_Layout.cshtml";)
+Added a new area called "Admin".
+Delete the Controllers, Data, Models folder.
+Copy _ViewImport and _ViewStart to Admin View > Home Area.

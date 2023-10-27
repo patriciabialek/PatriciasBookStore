@@ -63,7 +63,7 @@ namespace PatriciasBookStore
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}"); /*add something here later*/
+                    pattern: "{area:Customer}/{controller=Home}/{action=Index}/{id?}"); /*add something here later*/
                 endpoints.MapRazorPages();
             });
         }
