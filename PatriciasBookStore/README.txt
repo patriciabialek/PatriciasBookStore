@@ -67,3 +67,11 @@ Installed Identity.EntityFrameworkCore(v.5.0.17).
 2023-10-27 1343:
 Change the namespace to : (namespace PatriciasBookStore.DataAccess.Data) in ApplicationDbContext.cs.
 Deleted defualt Class1.cs files.
+
+2023-10-27 1346:
+Moved Models folder to PatriciasBooks.Models and deleted origional.
+
+2023-10-27 1352:
+In PatriciasBookStore right click to Add > Project reference and clicked on .DataAccess and .Models.
+Renamed Models folder to ViewModels.
+Changed the ErrorViewModels.cs namespace .Models.ViewModels
