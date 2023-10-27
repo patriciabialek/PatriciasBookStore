@@ -50,3 +50,9 @@ id="navbarDropdown"
 data-toggle="dropdown" 
 type="button"
 Run the project - no issues.
+
+2023-10-27 1325:
+Onto part 1.4
+Added 3 new projects to the application (PatriciasBooks.DataAccess, .Models, .Utility)
+Copy and Pasted the Data folder to the PatriciasBooks.DataAccess.
+Deleted previous Data folder.
