@@ -99,6 +99,7 @@ Moved the HomeController.cs to the Area > Customer > Controller folder and delet
 In HomeController.cs add [Area("Customer")] under the namespace.
 In the same file chnage the namespace to (namespace PatriciasBookStore.Area.Customer.Controllers).
 Had an error will fix later.
+Error: InvalidOperationException: The constraint reference 'Customer' could not be resolved to a type.
 
 2023-10-27 1443:
 Copy _ViewImport and _ViewStart to Customer View > Home Area.
@@ -106,3 +107,10 @@ Modified the _ViewStart.cshtml to (Layout = "~/Views/Shared/_Layout.cshtml";)
 Added a new area called "Admin".
 Delete the Controllers, Data, Models folder.
 Copy _ViewImport and _ViewStart to Admin View > Home Area.
+
+2023-10-27 1419:
+Changed the versions of the packaged to 5.0.11 for relational and sqlserver and 5.0.2 for entityframeworkcore
+
+2023-10-27 1427:
+Finally fixed the error I had to chnage the pattern to:( pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}"); ).
+And have completed all the Views to import in the Admin and Customer folder.

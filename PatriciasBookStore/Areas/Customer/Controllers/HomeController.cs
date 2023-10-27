@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using PatriciasBookStore.Models;
+using PatriciasBookStore.Models.ViewModels; /*added here*/
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
