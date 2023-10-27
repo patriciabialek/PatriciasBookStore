@@ -62,3 +62,8 @@ Installed Microsoft.EntityFrameworkCore.Relational(v.5.0.17) & Microsoft.EntityF
 
 2023-10-27 1336:
 Deleted Migrations folder.
+Installed Identity.EntityFrameworkCore(v.5.0.17).
+
+2023-10-27 1343:
+Change the namespace to : (namespace PatriciasBookStore.DataAccess.Data) in ApplicationDbContext.cs.
+Deleted defualt Class1.cs files.
