@@ -119,7 +119,7 @@ And have completed all the Views to import in the Admin and Customer folder.
 Cleaned the project, then Build the project.
 Beginning Part 2 - creating the DB.
 Changed all the packages frameworks to version 5.0.17.
-Run the project - no issues
+Run the project - no issues.
 
 2023-10-30 1535:
 Replace the text that was next to the connection string to the local DB with: Database=PatriciasBookStore
@@ -128,5 +128,11 @@ Where the console is, there is a bar that says 'Default project: PatriciasBookSt
 Again in the PM:  add-migration AddDefaultIdentityMigration - build succeeded, created timestamps in migrations folder in .DataAccess.
 Migration file name: 20231030192808_AddDefaultIdentityMigration.cs & 20231030192808_AddDefaultIdentityMigration.Designer.cs
 
-2023-10-30 15:
+2023-10-30 1538:
 have to update DB, in the PM: update-database - build succeeded
+Run the project - no issues.
+
+2023-10-30 15:
+Add a new class in .Models named: Category.cs.
+Populated the class, added Id & Name.
+In the PM: add-migration AddCategoryToDb - build succeeded, created another time stamp in .DataAccess.
