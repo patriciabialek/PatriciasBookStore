@@ -142,9 +142,9 @@ Added a new using statement and more to ApplicationDbContext.cs file.
 To resolve the duplication error - I deleted the AddCategoryToDb file in Migrations folder and then ran the commands:
 add-migration AddCategoryToDb & update-database - build succeeded.
 
-2023-10-30 16:
+2023-10-30 1702:
 Beginning Pt.2.2 Repository now.
 Ddded a new folder in .DataAccess named 'Repository', added a folder inside Repository named 'IRepository'.
 Add a new item (type: Interface) in the IRepository folder named 'IRepository.cs'.
-Uploaded the Repository file - and corrected errors and renamed the file IRepository.
+Populated the IRepository file.
 Run the project - no issues.
