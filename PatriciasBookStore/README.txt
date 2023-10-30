@@ -132,7 +132,12 @@ Migration file name: 20231030192808_AddDefaultIdentityMigration.cs & 20231030192
 have to update DB, in the PM: update-database - build succeeded
 Run the project - no issues.
 
-2023-10-30 15:
+2023-10-30 1548:
 Add a new class in .Models named: Category.cs.
 Populated the class, added Id & Name.
 In the PM: add-migration AddCategoryToDb - build succeeded, created another time stamp in .DataAccess.
+
+2023-10-30 1611:
+Added a new using statement and more to ApplicationDbContext.cs file.
+To resolve the duplication error - I deleted the AddCategoryToDb file in Migrations folder and then ran the commands:
+add-migration AddCategoryToDb & update-database - build succeeded.
