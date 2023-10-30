@@ -112,5 +112,10 @@ Copy _ViewImport and _ViewStart to Admin View > Home Area.
 Changed the versions of the packaged to 5.0.11 for relational and sqlserver and 5.0.2 for entityframeworkcore
 
 2023-10-27 1427:
-Finally fixed the error I had to chnage the pattern to:( pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}"); ).
+Finally fixed the error I had to change the pattern to:( pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}"); ).
 And have completed all the Views to import in the Admin and Customer folder.
+
+2023-10-30 1509:
+Beginning Part 2 - creating the DB.
+Changed all the packages frameworks to version 5.0.17.
+Run the project - no issues
