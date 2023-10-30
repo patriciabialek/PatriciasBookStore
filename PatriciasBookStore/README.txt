@@ -121,8 +121,12 @@ Beginning Part 2 - creating the DB.
 Changed all the packages frameworks to version 5.0.17.
 Run the project - no issues
 
+2023-10-30 1535:
 Replace the text that was next to the connection string to the local DB with: Database=PatriciasBookStore
 In the PM: add-migration AddDefaultIdentityMigration - error occured have to change the default to PatriciasBooks.DataAccess
 Where the console is, there is a bar that says 'Default project: PatriciasBookStore', click the drop down and click PatriciasBooks.DataAccess.
 Again in the PM:  add-migration AddDefaultIdentityMigration - build succeeded, created timestamps in migrations folder in .DataAccess.
 Migration file name: 20231030192808_AddDefaultIdentityMigration.cs & 20231030192808_AddDefaultIdentityMigration.Designer.cs
+
+2023-10-30 15:
+have to update DB, in the PM: update-database - build succeeded
