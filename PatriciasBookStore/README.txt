@@ -148,3 +148,18 @@ Ddded a new folder in .DataAccess named 'Repository', added a folder inside Repo
 Add a new item (type: Interface) in the IRepository folder named 'IRepository.cs'.
 Populated the IRepository file.
 Run the project - no issues.
+
+2023-10-31 1026:
+In the Repository folder in .DataAccess I uploaded the Repository.cs file.
+Changed the file to relate to PatriciasBookStore.
+Run the Project -no issues.
+
+2023-10-31 1034:
+Added a new interface inside the IRepository folder named 'ICategoryRepository'.
+And added a new class file inside the Repository folder named 'CategoryRepository'.
+Added using statements and code into CategoryRepository.
+
+2023-10-31 1041:
+Added code inside ICategoryRepository.
+Added more code inside CategoryRepository but i have an error on line 13 saying I need to implement all the other methods because I only have the Update
+method. So Intellisense recommended code to add to remove the error so I left it in, for the meantime.

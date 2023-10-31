@@ -9,12 +9,19 @@ namespace PatriciasBooks.DataAccess.Repository.IRepository
 {
     public interface IRepository<T> where T : class
     {
-        T Get(int id);
+        T Get(int id); //retrieve a cat from the db by id
+        //list of cat based on requirements
 
         IEnumerable<T> GetAll(
             Expression<Func<T, bool>> filter = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
-            string includeProperties = null);
+            string includeProperties = null
+            );
+
+        T GetFirstOrDefault(
+            Expression<Func<T, bool>> filter = null,
+            string includeProperties = null
+            );
 
         void Add(T entity); //to add an entity
         void Remove(int id); //to remove an object or cat
