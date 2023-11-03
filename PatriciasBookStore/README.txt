@@ -169,3 +169,13 @@ Created a new interface file in IRepo folder named 'ISP_Call.cs'.
 Input code into the file.
 Created a new class file in Repo folder named 'SP_Call.cs'.
 Input code into the file.
+
+2023-11-03 1447:
+Created a new interface file in IRepo folder named 'IUnitOfWork'.
+Input code into the file.
+Created a new class file in Repo folder named 'UnitOfWork'.
+Input code into the file.
+In start up add the using statements:
+using PatriciasBooks.DataAccess.Repository.IRepository;
+using PatriciasBooks.DataAccess.Repository;
+In Startup Config services add: services.AddScoped<IUnitOfWork, UnitOfWork>();

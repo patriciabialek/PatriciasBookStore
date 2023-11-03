@@ -1,3 +1,5 @@
+using PatriciasBooks.DataAccess.Repository.IRepository;
+using PatriciasBooks.DataAccess.Repository;
 using PatriciasBookStore.DataAccess.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -34,6 +36,7 @@ namespace PatriciasBookStore
 
             services.AddDefaultIdentity<IdentityUser>(/*options => options.SignIn.RequireConfirmedAccount = true*/) /*comment out in Startup.cs*/ 
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>(); /*new add from unit of work*/
             services.AddControllersWithViews();
         }
 
