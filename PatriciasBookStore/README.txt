@@ -181,4 +181,7 @@ using PatriciasBooks.DataAccess.Repository;
 In Startup Config services add: services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 2023-11-03 :
-Starting Part 2.3
+Starting Part 2.3.
+Created a Controllers folder inside Areas > Admin named 'CategoryController.cs'.
+Input code. 
+Created a new View inside Areas > Views > *NEWFOLDER Category named: 'Index.cshtml'.
