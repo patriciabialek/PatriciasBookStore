@@ -28,7 +28,7 @@ namespace PatriciasBooks.DataAccess.Repository
                 objFromDb.Name = category.Name;
                 _db.SaveChanges();
             }
-            /*throw new NotImplementedException();*/
+            //throw new NotImplementedException();
         }
         //Adding for now because line 13 will have an error
         void IRepository<Category>.Add(Category entity)
