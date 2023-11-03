@@ -180,10 +180,15 @@ using PatriciasBooks.DataAccess.Repository.IRepository;
 using PatriciasBooks.DataAccess.Repository;
 In Startup Config services add: services.AddScoped<IUnitOfWork, UnitOfWork>();
 
-2023-11-03 :
+2023-11-03 1730:
 Starting Part 2.3.
 Created a Controllers folder inside Areas > Admin named 'CategoryController.cs'.
 Input code. 
 Created a new View inside Areas > Views > *NEWFOLDER Category named: 'Index.cshtml'.
 Input code.
 Added category.js file in wwwroot. and linked in Index file.
+
+
+2023-11-03 1752:
+Input upsert method in category controller.
+Created a view called upsert in same folder, input code.
