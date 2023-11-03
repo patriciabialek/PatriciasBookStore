@@ -185,3 +185,5 @@ Starting Part 2.3.
 Created a Controllers folder inside Areas > Admin named 'CategoryController.cs'.
 Input code. 
 Created a new View inside Areas > Views > *NEWFOLDER Category named: 'Index.cshtml'.
+Input code.
+Added category.js file in wwwroot. and linked in Index file.
