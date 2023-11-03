@@ -192,3 +192,4 @@ Added category.js file in wwwroot. and linked in Index file.
 2023-11-03 1752:
 Input upsert method in category controller.
 Created a view called upsert in same folder, input code.
+Need to create partial view.
