@@ -127,6 +127,8 @@ Replace the text that was next to the connection string to the local DB with: Da
 In the PM: add-migration AddDefaultIdentityMigration - error occured have to change the default to PatriciasBooks.DataAccess
 Where the console is, there is a bar that says 'Default project: PatriciasBookStore', click the drop down and click PatriciasBooks.DataAccess.
 Again in the PM:  add-migration AddDefaultIdentityMigration - build succeeded, created timestamps in migrations folder in .DataAccess.
+
+{MIGRATION TIME STAMP}
 Migration file name: 20231030192808_AddDefaultIdentityMigration.cs & 20231030192808_AddDefaultIdentityMigration.Designer.cs
 
 2023-10-30 1538:
