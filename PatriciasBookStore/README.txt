@@ -115,6 +115,7 @@ Changed the versions of the packaged to 5.0.11 for relational and sqlserver and 
 Finally fixed the error I had to change the pattern to:( pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}"); ).
 And have completed all the Views to import in the Admin and Customer folder.
 
+{PART 2}
 2023-10-30 1509:
 Cleaned the project, then Build the project.
 Beginning Part 2 - creating the DB.
@@ -188,8 +189,13 @@ Created a new View inside Areas > Views > *NEWFOLDER Category named: 'Index.csht
 Input code.
 Added category.js file in wwwroot. and linked in Index file.
 
-
 2023-11-03 1752:
 Input upsert method in category controller.
 Created a view called upsert in same folder, input code.
 Need to create partial view.
+
+2023-11-06 :
+Created a PARTIAL View file named '_CreateAndBackToListButton' inside general Views > Shared folder.
+Input code inside file. 
+Created a PARTIAL View file named '_EditAndBackToListButton' inside general Views > Shared folder.
+Input code inside file. 
