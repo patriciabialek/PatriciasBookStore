@@ -65,20 +65,11 @@ namespace PatriciasBookStore.Areas.Admin.Controllers
         //API calls here
         #region API CALLS
         [HttpGet]
-
         public IActionResult GetAll()
         {
-            //return NotFound();
+            //return not found
             var allObj = _unitOfWork.Category.GetAll();
             return Json(new { data = allObj });
-        }
-        #endregion
-        [HttpGet]
-        public IActionResult All() /*GetAll()*/
-        {
-            //return NotFound();
-            var allObj = _unitOfWork.Category.GetAll();
-            return Json(new { data = allObj});
         }
 
         [HttpDelete]
@@ -93,6 +84,6 @@ namespace PatriciasBookStore.Areas.Admin.Controllers
             _unitOfWork.Save();
             return Json(new { success = true, message = "Delete successful" });
         }
-/*#endregion*/
+        #endregion
     }
 }

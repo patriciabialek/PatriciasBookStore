@@ -218,3 +218,8 @@ error: InvalidOperationException: The view 'Index' was not found. The following 
 
 2023-11-06 1608:
 Fixed the index error: the home folder that had the index and privacy had to be moved to customer views folder.
+
+2023-11-06 1629:
+Fixed the error in CategoryRepository by changing <CategoryRepository> to <Category>.
+Made a spelling mistake in index - upset  to upsert.
+run the program - no issues.
