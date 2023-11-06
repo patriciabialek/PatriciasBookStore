@@ -208,3 +208,10 @@ Updating categorycontroller.
 
 2023-11-06 1531:
 Updated the category.js file.
+
+2023-11-06 1551:
+error: InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Areas/Customer/Views/Home/Index.cshtml
+/Areas/Customer/Views/Shared/Index.cshtml
+/Views/Shared/Index.cshtml
+/Pages/Shared/Index.cshtml
