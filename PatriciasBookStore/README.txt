@@ -223,3 +223,5 @@ Fixed the index error: the home folder that had the index and privacy had to be 
 Fixed the error in CategoryRepository by changing <CategoryRepository> to <Category>.
 Made a spelling mistake in index - upset  to upsert.
 run the program - no issues.
+
+**********update-database***********
