@@ -205,3 +205,6 @@ Updated the Upsert.cshtml file.
 Added the asp action to the index.cshtml file.
 Added a script to validate in Upsert.cshtml.
 Updating categorycontroller.
+
+2023-11-06 1531:
+Updated the category.js file.
