@@ -194,8 +194,14 @@ Input upsert method in category controller.
 Created a view called upsert in same folder, input code.
 Need to create partial view.
 
-2023-11-06 :
+2023-11-06 1415:
 Created a PARTIAL View file named '_CreateAndBackToListButton' inside general Views > Shared folder.
 Input code inside file. 
 Created a PARTIAL View file named '_EditAndBackToListButton' inside general Views > Shared folder.
 Input code inside file. 
+
+2023-11-06 1521:
+Updated the Upsert.cshtml file.
+Added the asp action to the index.cshtml file.
+Added a script to validate in Upsert.cshtml.
+Updating categorycontroller.

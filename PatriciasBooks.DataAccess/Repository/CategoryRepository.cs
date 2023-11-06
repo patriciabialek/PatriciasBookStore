@@ -26,7 +26,7 @@ namespace PatriciasBooks.DataAccess.Repository
             if (objFromDb != null) //save chnages if not null
             {
                 objFromDb.Name = category.Name;
-                _db.SaveChanges();
+                /*_db.SaveChanges();*/
             }
             //throw new NotImplementedException();
         }
