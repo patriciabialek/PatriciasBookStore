@@ -215,3 +215,6 @@ error: InvalidOperationException: The view 'Index' was not found. The following 
 /Areas/Customer/Views/Shared/Index.cshtml
 /Views/Shared/Index.cshtml
 /Pages/Shared/Index.cshtml
+
+2023-11-06 1608:
+Fixed the index error: the home folder that had the index and privacy had to be moved to customer views folder.
