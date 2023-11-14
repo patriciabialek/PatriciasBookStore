@@ -227,3 +227,8 @@ Made a spelling mistake in index - upset  to upsert.
 run the program - no issues.
 
 **********update-database***********
+
+2023-11-14 1030:
+Beginning Part 3.1.
+Created a new class inside the .Models project 'CoverType.cs'.
+Input code in file.
