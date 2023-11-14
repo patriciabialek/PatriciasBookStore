@@ -232,3 +232,17 @@ run the program - no issues.
 Beginning Part 3.1.
 Created a new class inside the .Models project 'CoverType.cs'.
 Input code in file.
+
+2023-11-14 1030:
+Added CoverType to Repository and IRepository.
+Confused for: AddCoverType to IUnitOfWork and UnitOfWork?????
+Commented out everything in the meantime.
+Just with the CoverType.cs in the .Models project, in the PM with the project connected to .DataAccess input 'add-migration AddCoverTypeToDb'.
+
+Timestamp created: 20231114160659_AddCoverTypeToDb.cs
+
+Updated database: ' update-database '.
+Input CoverType in ApplicationDbContext.cs file.
+Copied code from ICategoryRepository & CategoryRepository to ICoverTypeRepository & CoverTypeRepository.
+Input CoverType into UnitOfWord & IUnitOfWork - no errors so i think I did it correctly.
+Updated the database.
