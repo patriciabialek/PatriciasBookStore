@@ -233,7 +233,7 @@ Beginning Part 3.1.
 Created a new class inside the .Models project 'CoverType.cs'.
 Input code in file.
 
-2023-11-14 1030:
+2023-11-14 1125:
 Added CoverType to Repository and IRepository.
 Confused for: AddCoverType to IUnitOfWork and UnitOfWork?????
 Commented out everything in the meantime.
@@ -246,3 +246,16 @@ Input CoverType in ApplicationDbContext.cs file.
 Copied code from ICategoryRepository & CategoryRepository to ICoverTypeRepository & CoverTypeRepository.
 Input CoverType into UnitOfWord & IUnitOfWork - no errors so i think I did it correctly.
 Updated the database.
+
+2023-11-14 1140:
+Added CoverType to the nav Bar drop down and added action/controller.
+Created a CoverType View folder in Admin.
+Copied the Category View index/Upsert and pasted it to the CoverType View folder (changed some code to match).
+Copied the CategoryController and created a CoverTypeController and pasted the code (changed some code to match).
+deleted teh upsert/index/controller from CoverType for now.
+Deleted the previous 20231114160659_AddCoverTypeToDb.cs and add the migration again in the PM
+
+new timestamp: 20231114165233_AddCoverTypeToDb
+
+recieving an error when clicking on either category or cover type in nav barerror
+error: Microsoft.Data.SqlClient.SqlException: 'Invalid object name 

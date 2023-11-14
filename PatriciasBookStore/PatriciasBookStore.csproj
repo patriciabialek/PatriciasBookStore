@@ -23,4 +23,8 @@
     <ProjectReference Include="..\PatriciasBooks.Utility\PatriciasBooks.Utility.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Views\CoverType\" />
+  </ItemGroup>
+
 </Project>
