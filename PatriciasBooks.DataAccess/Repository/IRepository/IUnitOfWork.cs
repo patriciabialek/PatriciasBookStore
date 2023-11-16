@@ -11,6 +11,7 @@ namespace PatriciasBooks.DataAccess.Repository.IRepository
         ICategoryRepository Category { get; }
         ISP_Call SP_Call { get; }
         ICoverTypeRepository CoverType { get; } /* new add pt.3.1 */
+        IProductRepository Product { get; }
 
         //add the save method to be used
         void Save();

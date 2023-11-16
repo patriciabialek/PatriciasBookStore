@@ -18,10 +18,12 @@ namespace PatriciasBooks.DataAccess.Repository
             Category = new CategoryRepository(_db);
             SP_Call = new SP_Call(_db);
             CoverType = new CoverTypeRepository(_db); //new add for pt.3.1
+            Product = new ProductRepository(_db);
         }
 
         public ICategoryRepository Category { get; private set; }
         public ISP_Call SP_Call { get; private set; }
+        public IProductRepository Product { get; private set; }
 
         public ICoverTypeRepository CoverType { get; private set; } //new add for pt.3.1
 

@@ -273,7 +273,7 @@ CoverType as a table now but still getting errors when i run the project.
 fixed the error i had to chnage the category table name to categories.
 Created a new javascript file for covertype and replaced some code.
 
-2023-11-16 1757:
+2023-11-16 1813:
 Beginning 3.2 CRUD
 Add a new class 'Product' in models folder.
 Added product reference to ApplicatioDbContext.
@@ -281,3 +281,9 @@ In the PM add-migration addProductToDb & update-database
 
 TimeStamp: 20231116231238_addProductToDb
 
+2023-11-16 1833:
+In the product.cs file make somemore columns required.
+In the PM add-migration addValidationToProduct & update-database
+Add product and Iproduct repos + input code.
+Add it to IUnitOfWork and UnitOfWork.
+Run the project no issues.
