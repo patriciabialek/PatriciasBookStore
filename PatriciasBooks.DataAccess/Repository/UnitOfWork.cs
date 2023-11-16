@@ -30,7 +30,7 @@ namespace PatriciasBooks.DataAccess.Repository
             _db.Dispose();
         }
 
-        public void Save() //all chnages will be saved when the Save method is called at the 'parent' level
+        public void Save() //all changes will be saved when the Save method is called at the 'parent' level
         {
             _db.SaveChanges();
         }

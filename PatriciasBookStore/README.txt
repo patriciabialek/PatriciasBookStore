@@ -259,3 +259,9 @@ new timestamp: 20231114165233_AddCoverTypeToDb
 
 recieving an error when clicking on either category or cover type in nav barerror
 error: Microsoft.Data.SqlClient.SqlException: 'Invalid object name 
+
+2023-11-16 1527:
+Commented out Covertype in UnitOfWork and IUnitOfWork and run the project - no issues.
+Uncommented it, run the project - no issues.
+Added the CoverType folderin Admin, added the 2 file (index/upsert) - chnaged some code to match covertype.
+run the project no issues.
