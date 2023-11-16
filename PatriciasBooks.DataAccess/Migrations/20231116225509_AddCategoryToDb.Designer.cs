@@ -10,7 +10,7 @@ using PatriciasBookStore.DataAccess.Data;
 namespace PatriciasBooks.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231030201039_AddCategoryToDb")]
+    [Migration("20231116225509_AddCategoryToDb")]
     partial class AddCategoryToDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -236,6 +236,23 @@ namespace PatriciasBooks.DataAccess.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
+                });
+
+            modelBuilder.Entity("PatriciasBooks.Models.CoverType", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CoverTypes");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
