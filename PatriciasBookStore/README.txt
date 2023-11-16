@@ -272,3 +272,12 @@ CoverType as a table now but still getting errors when i run the project.
 2023-11-16 1757:
 fixed the error i had to chnage the category table name to categories.
 Created a new javascript file for covertype and replaced some code.
+
+2023-11-16 1757:
+Beginning 3.2 CRUD
+Add a new class 'Product' in models folder.
+Added product reference to ApplicatioDbContext.
+In the PM add-migration addProductToDb & update-database
+
+TimeStamp: 20231116231238_addProductToDb
+
