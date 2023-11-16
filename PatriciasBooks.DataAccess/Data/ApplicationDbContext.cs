@@ -15,6 +15,6 @@ namespace PatriciasBookStore.DataAccess.Data
         }
 
         public DbSet<Category> Categories { get; set; } /*new add pt.2*/
-        public DbSet<Category> CoverTypes { get; set; } /*new add pt.3*/
+        public DbSet<CoverType> CoverTypes { get; set; } /*new add pt.3*/
     }
 }
