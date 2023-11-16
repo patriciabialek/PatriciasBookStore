@@ -23,7 +23,7 @@ namespace PatriciasBooks.DataAccess.Repository
             //use .NET LINQ to retrieve the first or default category object,
             //then pass the id as a generic entity which matches the category ID
 
-            var objFromDb = _db.CoverType.FirstOrDefault(s => s.Id == covertype.Id);
+            var objFromDb = _db.CoverTypes.FirstOrDefault(s => s.Id == covertype.Id);
             if (objFromDb != null) //save changes if not null
             {
                 objFromDb.Name = covertype.Name;

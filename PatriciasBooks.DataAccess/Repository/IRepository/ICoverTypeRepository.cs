@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace PatriciasBooks.DataAccess.Repository.IRepository
 {
-    /*Added : IRepository<Category> for right now copied from ICategoryRepository*/
     public interface ICoverTypeRepository : IRepository<CoverType>
     {
-        /*Added below for right now*/
         void Update(CoverType covertype);
     }
 }

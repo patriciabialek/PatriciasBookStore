@@ -10,7 +10,7 @@ using PatriciasBookStore.DataAccess.Data;
 namespace PatriciasBooks.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231114165233_AddCoverTypeToDb")]
+    [Migration("20231116205152_AddCoverTypeToDb")]
     partial class AddCoverTypeToDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
