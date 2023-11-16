@@ -265,3 +265,6 @@ Commented out Covertype in UnitOfWork and IUnitOfWork and run the project - no i
 Uncommented it, run the project - no issues.
 Added the CoverType folderin Admin, added the 2 file (index/upsert) - chnaged some code to match covertype.
 run the project no issues.
+
+2023-11-16 1710:
+CoverType as a table now but still getting errors when i run the project.
