@@ -58,7 +58,7 @@ namespace PatriciasBookStore.Areas.Admin.Controllers
         }
 
         //use HTTP POST to define the post-action method
-        /*[HttpPost]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Upsert(Product product)
         {
@@ -67,7 +67,7 @@ namespace PatriciasBookStore.Areas.Admin.Controllers
                 if (product.Id == 0)
                 {
                     _unitOfWork.Product.Add(product);
-                    _unitOfWork.Save();
+                    //_unitOfWork.Save();
                 }
                 else
                 {
@@ -77,7 +77,7 @@ namespace PatriciasBookStore.Areas.Admin.Controllers
                 return RedirectToAction(nameof(Index)); //to see all the categories
             }
             return View(product);
-        }*/
+        }
 
         //API calls here
         #region API CALLS

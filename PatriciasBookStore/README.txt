@@ -77,7 +77,7 @@ Renamed Models folder to ViewModels.
 Changed the ErrorViewModels.cs namespace .Models.ViewModels
 
 2023-10-27 1402:
-Was having an error but I chnaged the startup.cs using statement to (using PatriciasBookStore.DataAccess.Data;) adding the 
+Was having an error but I changed the startup.cs using statement to (using PatriciasBookStore.DataAccess.Data;) adding the 
 DataAccess to it.
 Run the project - no issues.
 
@@ -293,6 +293,7 @@ Add product controller to admin + input code.
 Add class ProductVM to models project + input code.
 Updated the product controller.
 
+2023-11-16 1926:
 Add a product javascript file.
 And create a View product folder + add the index/upsert files.
 Add product link to layout.
@@ -300,3 +301,9 @@ Run the project - error :
 System.InvalidOperationException
   HResult=0x80131509
   Message=An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation ' CoverType' specified in string based include path ' CoverType'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+
+2023-11-17 1318:
+Input tiny.cloud functions in upsert.cshtml.
+Added a new folder and subfolder in wwwroot: images > products.
+Uncommented the upsert post method in product controller.
+
