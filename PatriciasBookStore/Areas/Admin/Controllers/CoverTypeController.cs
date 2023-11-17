@@ -64,6 +64,7 @@ namespace PatriciasBookStore.Areas.Admin.Controllers
 
         //API calls here
         #region API CALLS
+        [HttpGet]
         public IActionResult GetAll()
         {
             //return not found

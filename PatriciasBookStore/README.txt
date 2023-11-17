@@ -287,3 +287,8 @@ In the PM add-migration addValidationToProduct & update-database
 Add product and Iproduct repos + input code.
 Add it to IUnitOfWork and UnitOfWork.
 Run the project no issues.
+
+2023-11-16 1905:
+Add product controller to admin + input code.
+Add class ProductVM to models project + input code.
+Updated the product controller.
