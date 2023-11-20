@@ -307,3 +307,5 @@ Input tiny.cloud functions in upsert.cshtml.
 Added a new folder and subfolder in wwwroot: images > products.
 Uncommented the upsert post method in product controller.
 
+2023-11-20 1433:
+Changed code to move ProductVM to ViewModels folder. 

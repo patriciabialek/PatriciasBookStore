@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PatriciasBooks.Models
+namespace PatriciasBooks.Models.ViewModels
 {
     public class ProductVM
     {

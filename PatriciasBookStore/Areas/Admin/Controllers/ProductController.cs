@@ -1,7 +1,8 @@
 ﻿using PatriciasBooks.DataAccess.Repository.IRepository;
 using PatriciasBooks.DataAccess.Repository;
 using PatriciasBooks.Models;
-using Microsoft.AspNetCore.Hosting; /*new add part 3.2*/
+using PatriciasBooks.Models.ViewModels;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
