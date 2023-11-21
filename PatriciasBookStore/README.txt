@@ -310,5 +310,10 @@ Uncommented the upsert post method in product controller.
 2023-11-20 1433:
 Changed code to move ProductVM to ViewModels folder. 
 
-2023-11-21 0945:
-Removed the space inside include properties in productController between covertype and category.
+2023-11-21 1022:
+Removed the space inside include properties in productController between covertype and category to fix toList() error.
+I changed the categoryId to covertypeid for covertype in product.cs model.
+Removed product migration and created a new migration for products - updated the database.
+In product upsert changed categoryid to covertype id to retrieve the cover types.
+error when I run the project in products: 
+DataTables warning: table id=tblData - Requested unknown parameter 'price' for row 0, column 2. For more information about this error, please see http://datatables.net/tn/4
