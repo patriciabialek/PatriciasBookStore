@@ -317,3 +317,12 @@ Removed product migration and created a new migration for products - updated the
 In product upsert changed categoryid to covertype id to retrieve the cover types.
 error when I run the project in products: 
 DataTables warning: table id=tblData - Requested unknown parameter 'price' for row 0, column 2. For more information about this error, please see http://datatables.net/tn/4
+
+2023-11-21 1130:
+In product.cs in models - add new data for price.
+In the utility project in SD.cs file add new code.
+In covertypecontroller new code. (errors)
+In productcontroller new code.
+In product upsert new code.
+In customer homecontroller new code.
+In customer view index new code.
