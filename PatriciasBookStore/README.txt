@@ -309,3 +309,6 @@ Uncommented the upsert post method in product controller.
 
 2023-11-20 1433:
 Changed code to move ProductVM to ViewModels folder. 
+
+2023-11-21 0945:
+Removed the space inside include properties in productController between covertype and category.

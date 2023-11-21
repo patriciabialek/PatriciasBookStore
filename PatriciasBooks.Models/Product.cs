@@ -12,12 +12,12 @@ namespace PatriciasBooks.Models
     {
         [Key]
         public int Id { get; set; }
-        [Required]
+        //[Required]
         public string Title { get; set; }
         public string Description { get; set; }
-        [Required]
+        //[Required]
         public string ISBN { get; set; }
-        [Required]
+        //[Required]
         public string Author { get; set; }
 
         [Required]
@@ -32,7 +32,7 @@ namespace PatriciasBooks.Models
 
         [Required]
         public int CoverTypeId { get; set; } //foreign key reference
-        [ForeignKey("CategoryId")]
+        [ForeignKey("CoverTypeId")]
         public CoverType CoverType { get; set; }
     }
 }
