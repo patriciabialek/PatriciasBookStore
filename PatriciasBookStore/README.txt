@@ -329,3 +329,4 @@ In customer view index new code.
 
 2023-11-23 1721:
 Uncommented out all the new code I placed - when I build the database the build fails. 
+Uncommented index in cutomer view - build succeeded but error: Cannot find the object "Products" because it does not exist or you do not have permissions.
