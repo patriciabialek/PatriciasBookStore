@@ -62,7 +62,7 @@ namespace PatriciasBookStore.Areas.Admin.Controllers
         //use HTTP POST to define the post-action method
         [HttpPost]
         [ValidateAntiForgeryToken]
-        /*public IActionResult Upsert(Product product)
+        public IActionResult Upsert(Product product)
         {
             if (ModelState.IsValid) //checks all validation in the model to increase security
             {
@@ -79,8 +79,8 @@ namespace PatriciasBookStore.Areas.Admin.Controllers
                 return RedirectToAction(nameof(Index)); //to see all the categories
             }
             return View(product);
-        }*/
-        public IActionResult Upsert(ProductVM productVM)
+        }
+        /*public IActionResult Upsert(ProductVM productVM)
         {
             if (ModelState.IsValid)
             {
@@ -146,7 +146,7 @@ namespace PatriciasBookStore.Areas.Admin.Controllers
                 }
             }
             return View(productVM);
-        }
+        }*/
 
         //API calls here
         #region API CALLS
@@ -167,12 +167,12 @@ namespace PatriciasBookStore.Areas.Admin.Controllers
                 return Json(new { success = false, message = "Error while deleting" });
             }
             /*new part 4*/
-            string webRootPath = _hostEnvironment.WebRootPath;
+            /*string webRootPath = _hostEnvironment.WebRootPath;
             var imagePath = Path.Combine(webRootPath, objFromDb.ImageUrl.TrimStart('\\'));
             if (System.IO.File.Exists(imagePath))
             {
                 System.IO.File.Delete(imagePath);
-            }
+            }*/
             _unitOfWork.Product.Remove(objFromDb);
             _unitOfWork.Save();
             return Json(new { success = true, message = "Delete successful" });

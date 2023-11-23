@@ -31,7 +31,7 @@ namespace PatriciasBookStore.Areas.Admin.Controllers
                 //this is for create
                 return View(category);
             }
-            //this is ffor the edit
+            //this is for the edit
             category = _unitOfWork.Category.Get(id.GetValueOrDefault());
             if(category == null)
             {

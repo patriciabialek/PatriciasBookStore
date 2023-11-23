@@ -33,11 +33,8 @@ namespace PatriciasBookStore.Areas.Admin.Controllers
                 //this is for create
                 return View(covertype);
             }
-            //this is ffor the edit
-            //covertype = _unitOfWork.CoverType.Get(id.GetValueOrDefault());
-            var parameter = new DynamicParameters();
-            parameter.Add("@Id", id);
-            covertype = _unitOfWork.SP_Call.OneRecord<CoverType>(SD.Proc_CoverType_Get, parameter);
+            //this is for the edit
+            covertype = _unitOfWork.CoverType.Get(id.GetValueOrDefault());
             if (covertype == null)
             {
                 return NotFound();
@@ -52,54 +49,48 @@ namespace PatriciasBookStore.Areas.Admin.Controllers
         {
             if (ModelState.IsValid) //checks all validation in the model to increase security
             {
-                var parameter = new DynamicParameters();
-                parameter.Add("@Name", covertype.Name);
-
                 if (covertype.Id == 0)
                 {
-                    //_unitOfWork.CoverType.Add(covertype);
-                    //_unitOfWork.Save();
-                    _unitOfWork.SP_Call.Execute(SD.Proc_CoverType_Create, parameter);
+                    _unitOfWork.CoverType.Add(covertype);
+                    _unitOfWork.Save();
                 }
                 else
                 {
-                    //_unitOfWork.CoverType.Update(covertype);
-                    parameter.Add("@Id", covertype.Id);
-                    _unitOfWork.SP_Call.Execute(SD.Proc_CoverType_Update, parameter);
+                    _unitOfWork.CoverType.Update(covertype);
                 }
                 _unitOfWork.Save();
                 return RedirectToAction(nameof(Index)); //to see all the categories
             }
             return View(covertype);
+        }
 
-            //API calls here
-            #region API CALLS
-            [HttpGet]
+        //API calls here
+        #region API CALLS
+        [HttpGet]
             public IActionResult GetAll()
             {
                 //return not found
-                //var allObj = _unitOfWork.CoverType.GetAll();
-                var allObj = _unitOfWork.SP_Call.List<CoverType>(SD.Proc_CoverType_GetAll, null);
+                var allObj = _unitOfWork.CoverType.GetAll();
+                //var allObj = _unitOfWork.SP_Call.List<CoverType>(SD.Proc_CoverType_GetAll, null);
                 return Json(new { data = allObj });
             }
 
             [HttpDelete]
             public IActionResult Delete(int id)
             {
-                //var objFromDb = _unitOfWork.CoverType.Get(id);
-                var parameter = new DynamicParameters();
-                parameter.Add("@Id", id);
-                var objFromDb = _unitOfWork.SP_Call.OneRecord<CoverType>(SD.Proc_CoverType_Get, parameter);
+                var objFromDb = _unitOfWork.CoverType.Get(id);
+                //var parameter = new DynamicParameters();
+               /* parameter.Add("@Id", id);
+                var objFromDb = _unitOfWork.SP_Call.OneRecord<CoverType>(SD.Proc_CoverType_Get, parameter);*/
                 if (objFromDb == null)
                 {
                     return Json(new { success = false, message = "Error while deleting" });
                 }
-                //_unitOfWork.CoverType.Remove(objFromDb);
-                _unitOfWork.SP_Call.Execute(SD.Proc_CoverType_Delete, parameter);
+                _unitOfWork.CoverType.Remove(objFromDb);
+                //_unitOfWork.SP_Call.Execute(SD.Proc_CoverType_Delete, parameter);
                 _unitOfWork.Save();
                 return Json(new { success = true, message = "Delete successful" });
             }
             #endregion
         }
     }
-}
