@@ -10,7 +10,7 @@ using PatriciasBookStore.DataAccess.Data;
 namespace PatriciasBooks.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231124180506_addProductToDb")]
+    [Migration("20231124184500_addProductToDb")]
     partial class addProductToDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -283,6 +283,15 @@ namespace PatriciasBooks.DataAccess.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("ListPrice")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Price100")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Price50")
                         .HasColumnType("float");
 
                     b.Property<string>("Title")
