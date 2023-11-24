@@ -333,3 +333,6 @@ Uncommented index in cutomer view - build succeeded but error: Cannot find the o
 
 2023-11-23 1756:
 Unable right now to make a new product migration. same error.
+
+2023-11-23 1902:
+still getting error: Cannot find the object "Products" because it does not exist or you do not have permissions.

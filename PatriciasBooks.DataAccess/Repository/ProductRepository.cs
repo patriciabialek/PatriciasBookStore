@@ -1,6 +1,6 @@
 ﻿using PatriciasBooks.DataAccess.Repository.IRepository;
 using PatriciasBooks.Models;
-using PatriciasBookStore.DataAccess.Data; 
+using PatriciasBookStore.DataAccess.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,9 +21,9 @@ namespace PatriciasBooks.DataAccess.Repository
         public void Update(Product product)
         {
             var objFromDb = _db.Products.FirstOrDefault(s => s.Id == product.Id);
-            if(objFromDb != null) //save changes if not null
+            if (objFromDb != null) //save changes if not null
             {
-                if(product.ImageUrl != null)
+                if (product.ImageUrl != null)
                 {
                     objFromDb.ImageUrl = product.ImageUrl; //add the check for image url
                 }
