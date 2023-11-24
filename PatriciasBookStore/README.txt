@@ -341,4 +341,7 @@ still getting error: Cannot find the object "Products" because it does not exist
 Deleted the validation to products migration - still got same error. 
 I addded the validation migration again - same error - removed migration - removed migration again and got this in response:
 The migration '20231116225509_AddCategoryToDb' has already been applied to the database. Revert it and try again. If the migration has been applied to other databases, consider reverting its changes using a new migration instead.
-Added a product migration and the error is gone now. 
+Added a product migration and the error is gone now.
+
+2023-11-24 1331:
+Add validation to product migration.
