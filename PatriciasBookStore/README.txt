@@ -349,4 +349,7 @@ Add validation to product migration.
 2023-11-24 1345:
 Updated Product.cs with 3 new properties. 
 Removed old product migration - add-migration addProductToDb & update-database.
-Database contains new properties. 
+Database contains new properties.
+
+2023-11-24 1446:
+Updated Product repo.
