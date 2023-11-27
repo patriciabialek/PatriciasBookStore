@@ -368,3 +368,8 @@ Run the program - went okay but have 1 error: DataTables warning: table id=tblDa
 2023-11-27 1643:
 Removed Category,Product, Validation migration.
 Re-added them back.
+
+2023-11-27 1700:
+Added 3 images to image folder in wwwroot.
+Images wont show up in home page.
+same ajax error in products page: DataTables warning: table id=tblData - Requested unknown parameter 'category.Name' for row 0, column 4.
