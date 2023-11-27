@@ -32,7 +32,7 @@ namespace PatriciasBooks.DataAccess.Repository
                 objFromDb.ISBN = product.ISBN;
                 objFromDb.Author = product.Author;
                 objFromDb.ListPrice = product.ListPrice;
-                objFromDb.Price = product.Price;
+                //objFromDb.Price = product.Price;
                 objFromDb.CategoryId = product.CategoryId;
                 objFromDb.CoverTypeId = product.CoverTypeId;
                 //allproperties of product object

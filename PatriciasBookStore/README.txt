@@ -355,12 +355,16 @@ Database contains new properties.
 Updated Product repo.
 
 2023-11-27 1456:
-Removes Category,Product, Validation migration.
+Removed Category,Product, Validation migration.
 Re-added them back.
 
-2023-11-27 1:
+2023-11-27 1445:
 Updated the Product View Upsert file.
 Updated the Product controller.
 Updated the Hiome Controller in cutomer
 Trying to update the Home View in Customer.
 Run the program - went okay but have 1 error: DataTables warning: table id=tblData - Requested unknown parameter 'category.Name' for row 0, column 4.
+
+2023-11-27 1643:
+Removed Category,Product, Validation migration.
+Re-added them back.

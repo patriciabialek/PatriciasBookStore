@@ -11,6 +11,6 @@ namespace PatriciasBooks.Models.ViewModels
     {
         public Product Product { get; set; } //display all the product details
         public IEnumerable<SelectListItem> CategoryList { get; set; } //install package 'Microsoft.AspNetCore.Mvc.ViewFeatures'
-        public IEnumerable<SelectListItem> CoverTypeList { get; set; } 
+        public IEnumerable<SelectListItem> CoverTypeList { get; set; }
     }
 }

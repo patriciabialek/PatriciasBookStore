@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema; /*new add*/
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PatriciasBooks.Models
 {
@@ -24,12 +24,12 @@ namespace PatriciasBooks.Models
         [Range(1, 10000)]
         public double ListPrice { get; set; }
 
-        /*new*/
         [Required]
         [Range(1, 10000)]
         public double Price { get; set; }
-        /**/
-        public string ImageUrl { get; set; }
+
+        public string ImageUrl
+        { get; set; }
 
         [Required]
         public int CategoryId { get; set; } //foreign key reference
