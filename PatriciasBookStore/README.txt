@@ -373,3 +373,9 @@ Re-added them back.
 Added 3 images to image folder in wwwroot.
 Images wont show up in home page.
 same ajax error in products page: DataTables warning: table id=tblData - Requested unknown parameter 'category.Name' for row 0, column 4.
+
+2023-11-27 1730:
+In the upsert product view i deleted width:100% where it should display the product.
+Also in js product I renamed category.Name with .name
+Created a images folder in wwwroot and another folder inside named products and put my images there.
+The project is working but the only way to see the images on the homepage is when I update the column.
