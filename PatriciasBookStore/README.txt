@@ -353,3 +353,7 @@ Database contains new properties.
 
 2023-11-24 1446:
 Updated Product repo.
+
+2023-11-27 1456:
+Removes Category,Product, Validation migration.
+Re-added them back.
