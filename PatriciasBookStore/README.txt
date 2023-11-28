@@ -379,3 +379,6 @@ In the upsert product view i deleted width:100% where it should display the prod
 Also in js product I renamed category.Name with .name
 Created a images folder in wwwroot and another folder inside named products and put my images there.
 The project is working but the only way to see the images on the homepage is when I update the column.
+
+2023-11-28 1007:
+Images added to folder everytime I update.
