@@ -10,8 +10,8 @@ using PatriciasBookStore.DataAccess.Data;
 namespace PatriciasBooks.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231127214125_addValidationToProduct")]
-    partial class addValidationToProduct
+    [Migration("20231128142548_addProductToDb")]
+    partial class addProductToDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

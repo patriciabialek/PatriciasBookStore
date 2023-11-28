@@ -10,8 +10,8 @@ using PatriciasBookStore.DataAccess.Data;
 namespace PatriciasBooks.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231127214043_addProductToDb")]
-    partial class addProductToDb
+    [Migration("20231128142841_addValidationToDb")]
+    partial class addValidationToDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -263,6 +263,7 @@ namespace PatriciasBooks.DataAccess.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Author")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("CategoryId")
@@ -275,6 +276,7 @@ namespace PatriciasBooks.DataAccess.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ISBN")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageUrl")
@@ -287,6 +289,7 @@ namespace PatriciasBooks.DataAccess.Migrations
                         .HasColumnType("float");
 
                     b.Property<string>("Title")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
