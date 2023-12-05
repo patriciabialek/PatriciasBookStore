@@ -382,3 +382,6 @@ The project is working but the only way to see the images on the homepage is whe
 
 2023-11-28 1007:
 Images added to folder everytime I update.
+
+2023-12-05 0839:
+Uncommented out sslport.
